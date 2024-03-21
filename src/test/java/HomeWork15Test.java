@@ -27,8 +27,8 @@ public class HomeWork15Test {
         WebElement expandButton = driver.findElement(By.className("rct-option-expand-all"));
         expandButton.click();
 
-        WebElement checkboxClassified = driver.findElement(By.xpath("//label[@for='tree-node-classified']"));
-        checkboxClassified.click();
+        WebElement classifiedCheckbox = driver.findElement(By.xpath("//label[@for='tree-node-classified']"));
+        classifiedCheckbox.click();
 
         WebElement result = driver.findElement(By.id("result"));
         String value = result.getText();
